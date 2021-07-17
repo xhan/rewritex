@@ -22,9 +22,9 @@ var obj = JSON.parse(body);
 
 obj['user']["nickname"] = "PeterX";
 obj['user']["life"] = [1,1,1];
-//for (var game in obj["contents"]){
-//    game["is_locked"] = false
-//}
+obj["contents"].forEach((entry) => {
+    entry["is_locked"] = false;    
+});
 body = JSON.stringify(obj);
-console.log(body);
+console.log("Think2 body rewrited.");
 $done(body);
