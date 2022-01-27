@@ -1,6 +1,8 @@
 // 
 // https://api.enuma.cn/user/download
-
+// rule: script-response-body
+//       ^https://api\.enuma\.cn/user/download
+//      
 
 var body = $response.body;
 var obj = JSON.parse(body);
