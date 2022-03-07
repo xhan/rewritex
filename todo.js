@@ -15,8 +15,9 @@ obj['account']["promotions"] = [{
 obj['isTrialActive'] = true
 */
 obj['data']['account']['isSubscriptionActive'] = true
-obj['data']['account']["subscriptionExpireDate"] = Date.now() + 100*3600*24*1000;
-obj['data']['account']['isTrialActive'] = true ;
+obj['data']['account']["subscriptionExpireDate"] = 1697001115000
+obj['data']['account']['isTrialActive'] = true 
+/*
 obj['data']['account']['transactions'] = [{
 				"original_purchase_date_ms": 1642669544000,
 				"customDescription": "Trial",
@@ -26,8 +27,9 @@ obj['data']['account']['transactions'] = [{
 				"customDescription": "庆祝一千万下载",
 				"duration": 100
 			}]
-
+*/
 
 body = JSON.stringify(obj);
-console.log("Think2 body rewrited.");
+console.log("TODOmath body rewrited.");
+console.log(body)
 $done(body);
