@@ -14,16 +14,17 @@ obj['account']["promotions"] = [{
 			}]
 obj['isTrialActive'] = true
 */
-obj['account']["subscriptionExpireDate"] = 1646376315690 + 1000*24*3600*1000 ;
-obj['account']['isTrialActive'] = true ;
-obj['account']['transactions'] = [{
+obj['data']['account']['isSubscriptionActive'] = true
+obj['data']['account']["subscriptionExpireDate"] = Date.now() + 100;
+obj['data']['account']['isTrialActive'] = true ;
+obj['data']['account']['transactions'] = [{
 				"original_purchase_date_ms": 1642669544000,
 				"customDescription": "Trial",
 				"duration": 3
 			}, {
 				"original_purchase_date_ms": 1646376315690,
 				"customDescription": "庆祝一千万下载",
-				"duration": 1000
+				"duration": 100
 			}]
 
 
