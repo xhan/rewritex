@@ -14,7 +14,7 @@ obj['account']["promotions"] = [{
 			}]
 obj['isTrialActive'] = true
 */
-obj['account']["subscriptionExpireDate"] = 1697001115690 ;
+obj['account']["subscriptionExpireDate"] = 1646376315690 + 1000*24*3600*1000 ;
 obj['account']['isTrialActive'] = true ;
 obj['account']['transactions'] = [{
 				"original_purchase_date_ms": 1642669544000,
@@ -23,7 +23,7 @@ obj['account']['transactions'] = [{
 			}, {
 				"original_purchase_date_ms": 1646376315690,
 				"customDescription": "庆祝一千万下载",
-				"duration": 7
+				"duration": 1000
 			}]
 
 
