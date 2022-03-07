@@ -15,7 +15,7 @@ obj['account']["promotions"] = [{
 obj['isTrialActive'] = true
 */
 obj['data']['account']['isSubscriptionActive'] = true
-obj['data']['account']["subscriptionExpireDate"] = Date.now() + 100;
+obj['data']['account']["subscriptionExpireDate"] = Date.now() + 100*3600*24*1000;
 obj['data']['account']['isTrialActive'] = true ;
 obj['data']['account']['transactions'] = [{
 				"original_purchase_date_ms": 1642669544000,
