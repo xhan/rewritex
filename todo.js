@@ -5,31 +5,21 @@
 //      
 
 var body = $response.body;
-var obj = JSON.parse(body);
+
+
 /*
-obj['account']["promotions"] = [{
-				"code": "3DayUnlock_4_4_6",
-				"expireMs": 165156874400,
-				"status": 1
-			}]
-obj['isTrialActive'] = true
-*/
+var obj = JSON.parse(body);
 obj['data']['account']['isSubscriptionActive'] = true
 obj['data']['account']["subscriptionExpireDate"] = 1697001115000
 obj['data']['account']['isTrialActive'] = true 
-/*
-obj['data']['account']['transactions'] = [{
-				"original_purchase_date_ms": 1642669544000,
-				"customDescription": "Trial",
-				"duration": 3
-			}, {
-				"original_purchase_date_ms": 1646376315690,
-				"customDescription": "庆祝一千万下载",
-				"duration": 100
-			}]
-*/
 
 body = JSON.stringify(obj);
+*/
+p = body.replace(/subscriptionExpireDate":\d+/,"subscriptionExpireDate\":1697001115000")
+p = p.replace(/isSubscriptionActive":false/,"isSubscriptionActive\":true")
+p = p.replace(/isTrialActive":false/,"isTrialActive\":true")
+
+
 console.log("TODOmath body rewrited.");
-console.log(body)
-$done(body);
+console.log(p)
+$done(p);
